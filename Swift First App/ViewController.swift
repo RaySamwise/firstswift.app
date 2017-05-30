@@ -16,7 +16,7 @@ class ViewController: UIViewController {
     @IBAction func buttonTapped(_ sender: Any) {
          TapCount = TapCount + 1
         print(TapCount)
-        if TapCount >= 10 {
+        if TapCount >= 20 {
             LabelOne.text = "TAPPED 10 TIMES BUT FOR WHAT?"
             TapCount = 0
         }
