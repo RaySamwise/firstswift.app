@@ -22,10 +22,11 @@ class ViewController: UIViewController {
     
     
     @IBAction func buttonTapped(_ sender: Any) {
-       print(text1.text)
+       //print(text1.text)
+        LabelOne.text = "Got it \(Int(text1.text!)!  + Int(text2.text!)!)"
         }
        
-        
+    
     
     @IBAction func button2Tapped(_ sender: Any) {
         LabelOne.text = "LOVE ME"
