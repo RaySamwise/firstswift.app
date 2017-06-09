@@ -10,22 +10,30 @@ import UIKit
 
 class ViewController: UIViewController {
     @IBOutlet weak var LabelOne: UILabel!
-
+    
     @IBOutlet weak var text1: UITextField!
     
-     @IBOutlet weak var text2: UITextField!
-    
-   
+    @IBOutlet weak var text2: UITextField!
     
     
-   
+    
+    
+    
     
     
     @IBAction func buttonTapped(_ sender: Any) {
-       //print(text1.text)
-        LabelOne.text = "Got it \(Int(text1.text!)!  + Int(text2.text!)!)"
+        //print(text1.text)
+        let addition = false
+        
+        if addition {
+            
+            LabelOne.text = "Got it \(Int(text1.text!)!  + Int(text2.text!)!)"
+         
+        } else {
+            LabelOne.text = "Got it \(Int(text1.text!)!  - Int(text2.text!)!)"
+           
         }
-       
+    }
     
     
     @IBAction func button2Tapped(_ sender: Any) {
@@ -35,14 +43,14 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
-       
+        
     }
-
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-
-
+    
+    
 }
 
